@@ -1,15 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:reels_app/reels_app.dart';
 
-import 'package:get/get.dart';
-
-import 'app/routes/app_pages.dart';
-
-void main() {
-  runApp(
-    GetMaterialApp(
-      title: "Application",
-      initialRoute: AppPages.INITIAL,
-      getPages: AppPages.routes,
-    ),
-  );
+void main(){
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(const ReelsApp());
 }
